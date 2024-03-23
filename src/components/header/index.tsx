@@ -7,8 +7,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-10 bg-neutral-100 dark:bg-neutral-800">
       <section className="mx-auto flex max-w-screen-xl items-center justify-between p-4">
-        <a className="flex items-center space-x-3 self-center whitespace-nowrap text-2xl font-semibold text-slate-700 dark:text-slate-400">
-          SHANE
+        <a
+          className="cursor-pointer	 whitespace-nowrap text-2xl font-semibold text-slate-700"
+          onClick={() => router.replace("/")}
+        >
+          SHANE STUDIO
         </a>
         <nav className="hidden space-x-8 text-xl md:block">
           <Button variant="link" onClick={() => router.replace("/")}>
