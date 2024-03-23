@@ -19,10 +19,8 @@ export default function Blog() {
     <main className="pb-32">
       <div className="justify-left mx-auto mt-8 flex max-w-screen-xl px-4">
         <article>
-          <h1 className="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
-            Blog
-          </h1>
-          <div className="mt-2 text-lg text-slate-500 dark:text-slate-400"></div>
+          <h1 className="text-4xl font-extrabold text-slate-700">Blog</h1>
+          <div className="mt-2 text-lg text-slate-500"></div>
         </article>
       </div>
       <div className="mx-auto max-w-screen-xl">

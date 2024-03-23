@@ -7,17 +7,15 @@ export default function Article({ params }: { params: { id: string } }) {
     <main className="pb-24">
       <div className="justify-left mx-auto mt-8 flex max-w-screen-md px-4">
         <article>
-          <h1 className="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
+          <h1 className="text-4xl font-extrabold text-slate-700">
             Hi, nice to meet you! 👋
           </h1>
-          <h2 className="mt-4 text-2xl text-slate-500 dark:text-slate-400">
-            Nice to meet you!
-          </h2>
-          <div className="mb-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
+          <h2 className="mt-4 text-2xl text-slate-500">Nice to meet you!</h2>
+          <div className="mb-4 mt-2 text-sm text-slate-500">
             Sat Mar 23, 2024
           </div>
           <Image
-            src="/author.png"
+            src="/full.JPG"
             alt="blogImage"
             borderRadius="lg"
             className="mb-8"

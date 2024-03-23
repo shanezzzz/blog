@@ -5,7 +5,7 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="sticky top-0 z-10 bg-neutral-100 dark:bg-neutral-800">
+    <header className="sticky top-0 z-10 bg-neutral-100">
       <section className="mx-auto flex max-w-screen-xl items-center justify-between p-4">
         <a
           className="cursor-pointer	 whitespace-nowrap text-2xl font-semibold text-slate-700"

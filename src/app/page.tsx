@@ -13,14 +13,14 @@ export default function Home() {
               alt="Qubt"
               src="/author.png"
             />
-            <div className="absolute bottom-4 right-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-solid border-slate-50 bg-neutral-300 dark:bg-neutral-500">
+            <div className="absolute bottom-4 right-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-solid border-slate-50 bg-neutral-300">
               🔧
             </div>
           </div>
-          <h1 className="text-center text-4xl font-extrabold text-slate-700 dark:text-slate-200">
+          <h1 className="text-center text-4xl font-extrabold text-slate-700">
             Shane
           </h1>
-          <h2 className="mt-4 text-center text-xl text-slate-600 dark:text-slate-400">
+          <h2 className="mt-4 text-center text-xl text-slate-600">
             Full stack development engineer 🧑‍💻
           </h2>
           <div className="mt-4 flex flex-wrap items-center justify-center"></div>
