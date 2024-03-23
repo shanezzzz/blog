@@ -2,6 +2,7 @@
 
 import { Card, CardBody, Text, Image, Stack, Heading } from "@chakra-ui/react";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const defaultArticleData = {
   imageUrl: "/author.png",
@@ -11,6 +12,7 @@ const defaultArticleData = {
 };
 
 export default function Blog() {
+  const router = useRouter();
   const [articleList, setArticleList] = useState([defaultArticleData]);
 
   return (
@@ -26,7 +28,11 @@ export default function Blog() {
       <div className="mx-auto max-w-screen-xl">
         <div className="mt-8 grid grid-flow-row grid-cols-1 justify-items-center gap-8 px-4 lg:grid-cols-2">
           {articleList.map((item) => (
-            <Card key={item.title} className="cursor-pointer">
+            <Card
+              key={item.title}
+              className="cursor-pointer"
+              onClick={() => router.push("/blog/1")}
+            >
               <CardBody>
                 <Image src={item.imageUrl} alt="blogImage" borderRadius="lg" />
                 <Stack mt="6" spacing="3">
