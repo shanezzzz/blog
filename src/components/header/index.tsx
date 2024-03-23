@@ -20,7 +20,7 @@ export default function Header() {
           <Button variant="link" onClick={() => router.push("/blog")}>
             Blog
           </Button>
-          <Button variant="link" onClick={() => router.replace("about")}>
+          <Button variant="link" onClick={() => router.replace("/about")}>
             About
           </Button>
         </nav>
