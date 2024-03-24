@@ -28,7 +28,7 @@ export default function About() {
       <div className="justify-left mx-auto mt-8 flex max-w-screen-lg px-4">
         <article>
           <h1 className="mb-4 text-4xl font-extrabold text-slate-700">
-            Biography
+            About Me
           </h1>
           <div className="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md">
             <Text className="mb-2 leading-7" fontSize="lg">
