@@ -1,5 +1,16 @@
 import { Image } from "@chakra-ui/react";
 
+const linkList = [
+  {
+    icon: "/x.png",
+    link: "https://twitter.com/shane33539731",
+  },
+  {
+    icon: "/instagram.png",
+    link: "https://www.instagram.com/shane_acho/",
+  },
+];
+
 export default function Home() {
   return (
     <main>
@@ -23,7 +34,18 @@ export default function Home() {
           <h2 className="mt-4 text-center text-xl text-slate-600">
             Full stack development engineer 🧑‍💻
           </h2>
-          <div className="mt-4 flex flex-wrap items-center justify-center"></div>
+          <div className="mt-4 flex flex-wrap items-center justify-center">
+            {linkList.map((item) => (
+              <a
+                key={item.icon}
+                className="cursor-pointer	mr-4 br-4 w-10 h-10"
+                href={item.link}
+                target="_bank"
+              >
+                <Image src={item.icon} alt={item.icon} />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </main>
